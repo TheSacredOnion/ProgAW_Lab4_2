@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Księga Dowcipów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Księga Dowcipów (JokeBook)</h1>
+
+    <section class="categories-section">
+        <h2>Dostępne Kategorie</h2>
+        <ul id="categories-list">
+            <li>Ładowanie kategorii...</li>
+        </ul>
+        <p id="categories-error" class="error-message"></p>
+    </section>
+
+    <hr>
+
+    <section class="get-joke-section">
+        <h2>Losowy Dowcip</h2>
+        <label for="joke-category-select">Wybierz kategorię:</label>
+        <select id="joke-category-select">
+            </select>
+        <button id="get-joke-btn" disabled>Pobierz Dowcip</button>
+        <div id="joke-output">
+            </div>
+        <p id="joke-error" class="error-message"></p>
+    </section>
+
+    <hr>
+
+    <section class="add-joke-section">
+        <h2>Dodaj Nowy Dowcip</h2>
+        <form id="add-joke-form">
+            <label for="add-category-select">Kategoria:</label>
+            <select id="add-category-select" required>
+                </select>
+            
+            <label for="joke-question">Pytanie:</label>
+            <input type="text" id="joke-question" placeholder="Jaki jest twój ulubiony kolor?">
+            
+            <label for="joke-answer">Odpowiedź:</label>
+            <textarea id="joke-answer" rows="3" required placeholder="Biały, żeby wszystko było widać."></textarea>
+            
+            <button type="submit" id="add-joke-btn" disabled>Dodaj Dowcip</button>
+            <p id="add-joke-status"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

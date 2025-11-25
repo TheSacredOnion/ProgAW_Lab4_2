@@ -3,6 +3,9 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
+const cors = require('cors');
+
+app.use(cors());
 
 const jokes = JSON.parse(fs.readFileSync('./jokes.json', 'utf8'));
 const categories = Object.keys(jokes);

@@ -25,6 +25,10 @@
     {
       "joke": "Dlaczego JavaScript lubi podchody?",
       "response": "Bo zawsze działa 'po cichu'!"
+    },
+    {
+      "response": "Bo 24 Dec == 31 Oct!!",
+      "joke": "Dlaczego programiści mylą Boże Narodzenie z Halloween?"
     }
   ]
 }
