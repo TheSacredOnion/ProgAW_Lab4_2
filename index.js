@@ -13,7 +13,13 @@ app.get('/math/circle/:r', (req, res) => {
 });
 
 //TODO2
-
+app.get('/math/rectangle/:a/:b', (req, res) => {
+  const a = parseFloat(req.params.a);
+  const b = parseFloat(req.params.b);
+  const area = a * b;
+  const perimeter = 2 * (a + b);
+  res.json({ area, perimeter });
+});
 
 //TODO3
 
